@@ -1,0 +1,104 @@
+header{
+    background-image: url('./Fon.png');
+    background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    min-height: 40rem;
+}
+
+nav{
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+
+}
+
+ul.nav-list {
+    /* display: flex; */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.nav-list li {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+}
+ul.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.hero{
+    color: white;
+    text-align: center;
+    margin-top: 10rem;
+    
+}
+.hero h1{
+    font-size: 3rem;
+}
+.hero p{
+    font-size: 1rem;
+}
+
+button.menu-toggle{
+    display: none;
+}
+
+
+.menu-opened .nav-list{
+    transform: translateY(0);
+
+
+}
+@media (max-width:768px) {
+    button.menu-toggle{
+        display: block;
+        z-index: 1;
+    }
+ul.nav-list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgba(0,0,0,0.5);
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+
+ul.nav-list li {
+        display: block;
+        padding: 1rem ;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
