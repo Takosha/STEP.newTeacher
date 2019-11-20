@@ -1,8 +1,10 @@
 const button = document.querySelector('.menu-toggle');
 
-button.addEventListener('click', () => {
-    document.body.classList.toggle('menu-opened');
-});
+if (button) {
+    button.addEventListener('click', () => {
+        document.body.classList.toggle('menu-opened');
+    });
+}
 
 
 const products = [
@@ -70,6 +72,7 @@ function showProducts(products) {
         <div class="product-price">price: ${product.price}$</div>
     </div>
 </a>
+<button id="remove-product" data-id="${product.id}"> Remove</button>
 </li>
 `
     }
